@@ -9,6 +9,7 @@ body{
 .container-center{
     max-width: 600px;
     margin:auto;
+    padding: 1rem 1rem;
 }
 
 
@@ -26,7 +27,7 @@ button{
 }
 .text-area{
     height: 10rem; 
-    width: 30rem; 
+    width: 100% ;
     padding: 1rem 1rem;
     border: solid 1px; 
     
