@@ -7,7 +7,7 @@ body{
 }
 
 .container-center{
-    max-width: 500px;
+    max-width: 200px;
     margin:auto;
    padding:1rem 1rem;
 }
