@@ -1,0 +1,41 @@
+:root{
+    --primaryColor--: #4BCFFA;
+}
+body{
+   
+    margin: 0px;
+}
+
+.container-center{
+    max-width: 600px;
+    margin:auto;
+}
+
+
+header{
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primaryColor--)
+    
+}
+button{
+    padding:1rem 1rem;
+    background-color:var(--primaryColor--);
+    border:none;
+  
+}
+.text-area{
+    height: 10rem; 
+    width: 30rem; 
+    padding: 1rem 1rem;
+    border: solid 1px; 
+    
+    
+}
+
+footer{
+    padding: 1rem 1rem;
+    text-align:center;
+    border: 1rem;
+    background-color: var(--primaryColor--);
+}
