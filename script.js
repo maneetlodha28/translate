@@ -15,7 +15,13 @@ const clickHandler = () => {
     .then((response) => response.json())
     .then((data) => {
       if (data.error) {
-        console.log("Error occured while calling the API");
+        console.log(data.error.message);
+        Toastify({
+          text: data.error.message,
+          backgroundColor: "#D63031",
+          duration: 4000,
+        }).showToast();
+        return;
       } else {
         var translatedText = data.contents.translated;
         outputTxt.innerText = translatedText;
