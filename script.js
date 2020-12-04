@@ -9,7 +9,7 @@ const converttext = (text) => {
 };
 
 const clickHandler = () => {
-  var textToTranslate = inputTxt.value;
+  var textToTranslate = inputTxt.value; //value of input text box
 
   fetch(converttext(textToTranslate))
     .then((response) => response.json())
@@ -20,6 +20,7 @@ const clickHandler = () => {
           text: data.error.message,
           backgroundColor: "#D63031",
           duration: 4000,
+          position: "center",
         }).showToast();
         return;
       } else {
@@ -29,5 +30,4 @@ const clickHandler = () => {
     });
   // .catch((error) => console.log(error));
 };
-
 btnTranslate.addEventListener("click", clickHandler);
